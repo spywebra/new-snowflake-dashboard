@@ -2,7 +2,10 @@
  * Displays the sidebar
  */
 
-import React, { useState } from 'react';
+import React, {
+  useState,
+  useContext,
+} from 'react';
 import {
   Nav,
   NavItem,
@@ -13,119 +16,102 @@ import {
 import {
   NavLink as RouterNavLink,
 } from 'react-router-dom';
-import {
-  useWeb3Context,
-} from 'web3-react';
 import numeral from 'numeral';
 
 import Onboarding from '../onboarding';
 import CategoriesMenu from './components/categoriesMenu';
 import whiteHydroDrop from '../../common/img/hydro_white_drop.png';
 
-import {
-  getAccountEin,
-  getSnowflakeBalance,
-  getIdentity,
-  subscribeToDeposits,
-} from '../../services/utilities';
+import SnowflakeContext from '../../contexts/snowflakeContext';
 
-const raindropContractAddress = '0x387Ce3020e13B0a334Bb3EB25DdCb73c133f1D7A';
+import {
+  fromWei,
+} from '../../services/format';
+
+import {
+  network,
+} from '../../common/config/network.json';
 
 function Sidebar() {
-  const [hasProvider, setHasProvider] = useState(false);
-  const [hasEin, setHasEin] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [balance, setBalance] = useState('');
-  const [addedDapps, setAddedDapps] = useState(0);
 
-  const web3 = useWeb3Context();
+  const snowflakeContext = useContext(SnowflakeContext);
 
-  if (web3.active) {
-    if (!hasProvider) {
-      setHasProvider(true);
+  const {
+    ein,
+    snowflakeBalance,
+    dapps,
+    networkId,
+    hasProvider,
+  } = snowflakeContext;
+
+  function displayButton() {
+    if (ein) {
+      return (
+        <div>
+          <NavItem>
+            <NavLink tag={RouterNavLink} exact to="/" className="sidebar__link" activeClassName="sidebar__link--active">
+              Hydro dApp Store
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={RouterNavLink} exact to="/wallet" className="sidebar__link" activeClassName="sidebar__link--active">
+              Your Wallet
+              <Badge className="sidebar__badge" color="secondary" pill>
+                {numeral(fromWei(snowflakeBalance.toString())).format('0 a')}
+                {' '}
+                <img src={whiteHydroDrop} alt="Hydro Drop" className="sidebar__hydro-drop" />
+              </Badge>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={RouterNavLink} exact to="/manage" className="sidebar__link" activeClassName="sidebar__link--active">
+              Your dApps
+              <Badge className="sidebar__badge" color="secondary" pill>
+                {dapps.length}
+              </Badge>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={RouterNavLink} exact to="/identity" className="sidebar__link" activeClassName="sidebar__link--active">
+              Manage Your Identity (EIN)
+            </NavLink>
+          </NavItem>
+        </div>
+      );
     }
 
-    if (!hasEin) {
-      getAccountEin(web3.library, web3.account)
-        .then((res) => {
-          if (res !== '') {
-            setHasEin(true);
-
-            return getSnowflakeBalance(web3.library, web3.account);
-          }
-        })
-        .then((res) => {
-          setBalance(web3.library.utils.fromWei(res));
-
-          return getIdentity(web3.library, web3.account);
-        })
-        .then((res) => {
-          setAddedDapps(res.resolvers.filter(resolver => resolver !== raindropContractAddress));
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-
-      subscribeToDeposits(web3.library, web3.account, () => {
-        getSnowflakeBalance(web3.library, web3.account)
-          .then((res) => {
-            setBalance(web3.library.utils.fromWei(res));
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      });
+    if (hasProvider && networkId !== network) {
+      return (
+        <div className="onboardingButton">
+          <Button color="warning">
+            Wrong network
+          </Button>
+        </div>
+      );
     }
+
+    return (
+      <div className="onboardingButton">
+        <Onboarding
+          step={hasProvider ? 'hydroId' : 'provider'}
+          isOpen={isModalOpen}
+          toggle={() => setIsModalOpen(false)}
+          hasProvider={hasProvider}
+          networkId={networkId}
+        />
+        <Button color="primary" onClick={() => setIsModalOpen(!isModalOpen)}>
+          Create Account
+        </Button>
+      </div>
+    );
   }
 
   return (
     <div className="sidebar">
       <div className="py-4">
         <Nav vertical>
-          {hasEin ? (
-            <div>
-              <NavItem>
-                <NavLink tag={RouterNavLink} exact to="/" className="sidebar__link" activeClassName="sidebar__link--active">
-                  Hydro dApp Store
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={RouterNavLink} exact to="/wallet" className="sidebar__link" activeClassName="sidebar__link--active">
-                  Your Wallet
-                  <Badge className="sidebar__badge" color="secondary" pill>
-                    {numeral(balance).format('0 a')}
-                    {' '}
-                    <img src={whiteHydroDrop} alt="Hydro Drop" className="sidebar__hydro-drop" />
-                  </Badge>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={RouterNavLink} exact to="/manage" className="sidebar__link" activeClassName="sidebar__link--active">
-                  Your dApps
-                  <Badge className="sidebar__badge" color="secondary" pill>
-                    {addedDapps.length}
-                  </Badge>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={RouterNavLink} exact to="/identity" className="sidebar__link" activeClassName="sidebar__link--active">
-                  Manage Your Identity (EIN)
-                </NavLink>
-              </NavItem>
-            </div>
-          ) : (
-            <div className="onboardingButton">
-              <Onboarding
-                step={hasProvider ? 'provider' : 'hydroId'}
-                isOpen={isModalOpen}
-                toggle={() => setIsModalOpen(false)}
-                hasProvider={hasProvider}
-              />
-              <Button color="primary" onClick={() => setIsModalOpen(!isModalOpen)}>
-                Create Account
-              </Button>
-            </div>
-          )}
+          {displayButton()}
           <NavItem>
             <NavLink tag={RouterNavLink} exact to="/submit" className="sidebar__link" activeClassName="sidebar__link--active">
               Submit A dApp

@@ -9,9 +9,6 @@ import {
   Row,
   Col,
 } from 'reactstrap';
-import {
-  useWeb3Context,
-} from 'web3-react';
 
 import Header from '../header';
 import Footer from '../footer';
@@ -22,7 +19,7 @@ import Wallet from '../../routes/wallet';
 import Home from '../../routes/home';
 import Faq from '../../routes/faq';
 import Contact from '../../routes/contact/contact';
-import identity from '../../routes/identity';
+import Identity from '../../routes/identity';
 import About from '../../routes/about';
 import Category from '../../routes/category';
 import Manage from '../../routes/manage';
@@ -30,13 +27,7 @@ import Privacy from '../../routes/privacy';
 import Submit from '../../routes/submit';
 import Terms from '../../routes/terms';
 
-const App = () => {
-  const web3 = useWeb3Context();
-
-  if (!web3.error && !web3.active) {
-    web3.setConnector('MetaMask');
-  }
-
+function App() {
   return (
     <BrowserRouter>
       <div>
@@ -52,7 +43,7 @@ const App = () => {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/faq" component={Faq} />
                 <Route exact path="/contact" component={Contact} />
-                <Route exact path="/identity" component={identity} />
+                <Route exact path="/identity" component={Identity} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/manage" component={Manage} />
                 <Route exact path="/privacy" component={Privacy} />
@@ -70,6 +61,6 @@ const App = () => {
       </div>
     </BrowserRouter>
   );
-};
+}
 
 export default App;
