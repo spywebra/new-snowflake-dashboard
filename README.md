@@ -1,5 +1,4 @@
-# Snowflake Dashboard
-
+# Snowflake Dashboard (Rinkeby Branch)
 ## Introduction
 
 This repository contains the new version of the Snowflake Dashboard. This version is still a **work-in-progress** and **is not live yet**.
