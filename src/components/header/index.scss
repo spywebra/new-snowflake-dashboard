@@ -8,17 +8,6 @@
   width: 100%;
 }
 
-.show .navbar-nav {
-  background-color: #fff;
-  padding: 15px;
-  text-align: right;
-  float: right;
-  width: 100%;
-  margin-top: 25px;
-  max-width: 300px;
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-}
-
 .navbar-brand {
   padding-left: 15px;
 }
@@ -76,8 +65,42 @@
   display: none;
 }
 
-.collapse {
-  position: absolute;
-  right: 0;
-  top: 50px;
+@media only screen and (max-width: 768px) {
+  .collapse {
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+
+  .show .navbar-nav {
+    background-color: #fff;
+    padding: 15px;
+    text-align: right;
+    float: right;
+    width: 100%;
+    margin-top: 25px;
+    max-width: 300px;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  }
+
+  .show .navbar-nav .header-account__wrapper {
+      margin-right: 30px;
+      margin-bottom: 30px;
+  }
+
+  .header-account__welcome {
+    font-size: 19px !important;
+  }
+
+  .header-account__ein {
+    font-size: 17px !important;
+  }
+
+  a.header__faq.nav-link {
+    padding-right: 28px;
+  }
+}
+
+.navbar-toggler {
+  outline: none;
 }
