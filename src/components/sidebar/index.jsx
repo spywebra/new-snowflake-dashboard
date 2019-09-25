@@ -108,7 +108,7 @@ function Sidebar() {
   }
 
   return (
-    <div className="sidebar">
+    <div className="sidebar sidebar__menu">
       <div className="py-4">
         <Nav vertical>
           {displayButton()}

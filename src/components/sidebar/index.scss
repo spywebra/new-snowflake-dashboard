@@ -80,3 +80,10 @@
   margin-left: 30px;
   margin-bottom: 15px;
 }
+
+@media only screen and (max-width: 580px) {
+  .sidebar__menu {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
