@@ -26,4 +26,11 @@
   "imageWidth": "150",
   "icon": "../../img/enjin.png",
   "link": "https://assetstore.unity.com/packages/tools/utilities/blockchain-sdk-by-enjin-124133"
+},
+{
+  "title": "Getting Test Hydro",
+  "description": "How to get test Hydro on the Rinkeby network for interacting with the dApp Store.",
+  "category": "how-to",
+  "icon": "../../img/video_icon.png",
+  "link": "https://projecthydro.org/getting-test-hydro"
 }

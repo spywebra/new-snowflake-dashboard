@@ -1,7 +1,7 @@
 [
   {
     "title": "dApp Store Walkthrough",
-    "description": "Snowflake is an ERC-1484 Provider that provides on-/off-chain identity management.",
+    "description": "A video demonstration of the Hydro dApp Store showcasing its features and pages.",
     "category": "how-to",
     "icon": "../../img/video_icon.png",
     "link": "https://projecthydro.org"
@@ -12,13 +12,6 @@
     "category": "how-to",
     "icon": "../../img/document_icon.png",
     "link": "https://projecthydro.org/blog/how-to-get-test-ethereum/"
-  },
-  {
-    "title": "Getting Test Hydro",
-    "description": "How to get test Hydro on the Rinkeby network for interacting with the dApp Store.",
-    "category": "how-to",
-    "icon": "../../img/video_icon.png",
-    "link": "https://projecthydro.org/getting-test-hydro"
   },
   {
     "title": "What is Hydro Snowflake?",
