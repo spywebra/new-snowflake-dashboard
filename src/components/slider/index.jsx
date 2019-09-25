@@ -37,10 +37,12 @@ function Carousel() {
           className="fadeit"
           key={slide.link}
         >
-          <div onClick={() =>{window.open(slide.link)}}
+          <div
             className="slider__test-slide"
             style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/${slide.image})` }}
-          />
+          >
+          <button className="slider_button" onClick={() =>{window.open(slide.link)}}>{slide.title}</button>
+          </div>
         </div>
       ))}
     </Slider>
