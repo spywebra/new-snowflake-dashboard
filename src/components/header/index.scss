@@ -69,3 +69,15 @@
   top: 13px;
   left: 140px;
 }
+
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+
+.collapse {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
