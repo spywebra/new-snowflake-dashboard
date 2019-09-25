@@ -16,20 +16,20 @@
     "link": "https://docs.carbon.money/"
   },
   {
+    "title": "Colony",
+    "description": "colonyJS is a library to help developers build with Colony. Using the colonyJS, you can build applications and services that interact with the colonyNetwork.",
+    "category": "how-to",
+    "imageWidth": "140",
+    "icon": "../../img/partners/colony.png",
+    "link": "https://colony.io/dev/docs/colonyjs/intro-get-started"
+  },
+  {
     "title": "Hydrogen",
     "description": "Easily create interactive web UIs for financial applications with our javascript components built in React.js.",
     "category": "how-to",
     "imageWidth": "150",
     "icon": "../../img/partners/hydrogen.png",
     "link": "https://www.hydrogenplatform.com/element/"
-  },
-  {
-    "title": "Matic",
-    "description": "Matic Network brings massive scale to Ethereum using an adapted version of Plasma with PoS based side chains.",
-    "category": "how-to",
-    "imageWidth": "80",
-    "icon": "../../img/partners/matic.png",
-    "link": "https://docs.matic.network/"
   },
   {
     "title": "Totle",

@@ -33,4 +33,12 @@
   "category": "how-to",
   "icon": "../../img/video_icon.png",
   "link": "https://projecthydro.org/getting-test-hydro"
+},
+{
+  "title": "Matic",
+  "description": "Matic Network brings massive scale to Ethereum using an adapted version of Plasma with PoS based side chains.",
+  "category": "how-to",
+  "imageWidth": "80",
+  "icon": "../../img/partners/matic.png",
+  "link": "https://docs.matic.network/"
 }
