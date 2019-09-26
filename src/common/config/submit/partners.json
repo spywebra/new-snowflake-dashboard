@@ -6,5 +6,13 @@
     "imageWidth": "150",
     "icon": "https://3box.io/static/media/ThreeBoxLogoBlack.4e0a0543.svg",
     "link": "https://docs.3box.io/"
+  },
+  {
+    "title": "Totle",
+    "description": "Totle's API and Smart Contracts work together to compare prices and route orders across the world's leading decentralized exchanges.",
+    "category": "how-to",
+    "imageWidth": "150",
+    "icon": "../../img/partners/totle.png",
+    "link": "https://developers.totle.com/docs/getting-started"
   }
 ]
