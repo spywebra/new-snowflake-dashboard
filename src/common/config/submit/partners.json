@@ -16,6 +16,14 @@
     "link": "https://docs.carbon.money/"
   },
   {
+    "title": "Colony",
+    "description": "colonyJS is a library to help developers build with Colony. Using the colonyJS, you can build applications and services that interact with the colonyNetwork.",
+    "category": "how-to",
+    "imageWidth": "140",
+    "icon": "../../img/partners/colony.png",
+    "link": "https://colony.io/dev/docs/colonyjs/intro-get-started"
+  },
+  {
     "title": "Totle",
     "description": "Totle's API and Smart Contracts work together to compare prices and route orders across the world's leading decentralized exchanges.",
     "category": "how-to",
