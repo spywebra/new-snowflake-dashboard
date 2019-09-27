@@ -8,6 +8,14 @@
     "link": "https://docs.3box.io/"
   },
   {
+    "title": "Carbon Money",
+    "description": "Use our REST JSON API to access Carbon endpoints, which can buy, sell and swap any cryptocurrency.",
+    "category": "how-to",
+    "imageWidth": "70",
+    "icon": "../../img/partners/carbon_money.svg",
+    "link": "https://docs.carbon.money/"
+  },
+  {
     "title": "Totle",
     "description": "Totle's API and Smart Contracts work together to compare prices and route orders across the world's leading decentralized exchanges.",
     "category": "how-to",
