@@ -128,7 +128,7 @@ function Submit() {
             </Card>
           ))}
 
-          <Collapse isOpen={isSandboxOpen}>
+          <Collapse className="submit__code-window" isOpen={isSandboxOpen}>
             <SyntaxHighlighter
               language="javascript"
               style={okaidia}
