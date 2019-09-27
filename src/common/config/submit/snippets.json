@@ -4,7 +4,7 @@
     "description": "A few lines of code to connect your resolver to the code base of web3.",
     "category": "snippet",
     "icon": "../../img/code_icon.png",
-    "snippet": "SNIPPET 1",
+    "snippet": "var random = function() {\r\n  var f = Math.floor, r = Math.random, a = arguments;\r\n  switch(a.length){\r\n    case 0: return f(r()); break;\r\n    case 1: return f(r() * (a[0] + 1));break;\r\n    case 2: return f(r() * (a[1] - a[0] + 1)) + a[0];break;\r\n  }\r\n};",
     "link": ""
   },
   {
