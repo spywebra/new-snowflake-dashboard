@@ -1,14 +1,6 @@
 [
-  {
-    "title": "Setting Up Your Resolver",
-    "description": "A few lines of code to connect your resolver to the code base of web3.",
-    "category": "snippet",
-    "icon": "../../img/code_icon.png",
-    "snippet": "var random = function() {\r\n  var f = Math.floor, r = Math.random, a = arguments;\r\n  switch(a.length){\r\n    case 0: return f(r()); break;\r\n    case 1: return f(r() * (a[0] + 1));break;\r\n    case 2: return f(r() * (a[1] - a[0] + 1)) + a[0];break;\r\n  }\r\n};",
-    "link": ""
-  },
    {
-    "title": "How to pass parameters to the resolver when adding new users to your Dapp",
+    "title": "Pass parameters to resolver when adding new users",
     "description": "See how It's possible to send additional parameters to your DApp contract when users get registered",
     "category": "snippet",
     "icon": "../../img/code_icon.png",
