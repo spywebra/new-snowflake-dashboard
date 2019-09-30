@@ -24,6 +24,22 @@
     "link": "https://colony.io/dev/docs/colonyjs/intro-get-started"
   },
   {
+    "title": "MESG",
+    "description": "MESG is a framework for developers to build applications efficiently. Use our Event and Marketplace SDKs to add powerful decentralized functionality.",
+    "category": "how-to",
+    "imageWidth": "180",
+    "icon": "../../img/partners/mesg.png",
+    "link": "https://docs.mesg.com/guide/"
+  },
+  {
+    "title": "Temporal",
+    "description": "Temporal is an enterprise-grade storage solution featuring an easy to use API that can be integrated into any existing application stack.",
+    "category": "how-to",
+    "imageWidth": "180",
+    "icon": "../../img/partners/temporal.png",
+    "link": "https://temporal.cloud/dev"
+  },
+  {
     "title": "Totle",
     "description": "Totle's API and Smart Contracts work together to compare prices and route orders across the world's leading decentralized exchanges.",
     "category": "how-to",
