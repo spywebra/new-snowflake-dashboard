@@ -24,6 +24,14 @@
     "link": "https://colony.io/dev/docs/colonyjs/intro-get-started"
   },
   {
+    "title": "Hydrogen",
+    "description": "Easily create interactive web UIs for financial applications with our javascript components built in React.js.",
+    "category": "how-to",
+    "imageWidth": "150",
+    "icon": "../../img/partners/hydrogen.png",
+    "link": "https://www.hydrogenplatform.com/element/"
+  },
+  {
     "title": "MESG",
     "description": "MESG is a framework for developers to build applications efficiently. Use our Event and Marketplace SDKs to add powerful decentralized functionality.",
     "category": "how-to",
