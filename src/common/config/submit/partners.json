@@ -8,6 +8,14 @@
     "link": "https://docs.3box.io/"
   },
   {
+    "title": "BZX",
+    "description": "bZx is a financial primitive for shorting, leverage, borrowing, and lending that empowers decentralized, efficient, and rent-free blockchain applications.",
+    "category": "how-to",
+    "imageWidth": "150",
+    "icon": "../../img/partners/bzx.png",
+    "link": "https://docs.bzx.network/bzx.js/intro"
+  },
+  {
     "title": "Carbon Money",
     "description": "Use our REST JSON API to access Carbon endpoints, which can buy, sell and swap any cryptocurrency.",
     "category": "how-to",
