@@ -29,6 +29,11 @@ import {
   Oxide,
 } from '../../legacy/Rinkeby/0x2930Cf9EE8E03C3E06Fa1828cCD8E371323Fde0f/index';
 
+import {
+  WhatOptionYouPreferView2,
+} from '../../legacy/Rinkeby/0xCCB4Ea50F4e4C3f5db8457B575E5Eb498ed7F242/index';
+
+
 function LegacyDapp(props) {
   const user = useContext(SnowflakeContext);
 
@@ -52,6 +57,11 @@ function LegacyDapp(props) {
       return <Oxide ein={ein} />;
     }
 
+    
+	  if (id === '0xCCB4Ea50F4e4C3f5db8457B575E5Eb498ed7F242') {
+      return <WhatOptionYouPreferView2 ein={ein} />;
+    }
+    
     return <Status ein={ein} />;
   }
 
