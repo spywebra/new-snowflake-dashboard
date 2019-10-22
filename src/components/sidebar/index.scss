@@ -11,6 +11,22 @@
   padding-top: 30px;
 }
 
+
+@media only screen and (max-width: 950px) {
+  .sidebar {
+  background-color: $snow-light-gray;
+  padding-left: 0;
+  padding-right: 15px;
+  position: absolute;
+  top: 0;
+  bottom: -60px;
+  width: 100%;
+  padding-top: 30px;
+  }
+}
+
+
+
 .sidebar__link {
   color: #626262;
   font-size: 17px;
