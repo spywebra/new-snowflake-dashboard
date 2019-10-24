@@ -16,7 +16,7 @@ Plugins such as ESLint or Stylelint can be installed in your IDE to help you out
 
 This project was bootstrapped using `create-react-app`, all of the scripts are still available. However, we recommend you to use only the two following:
 
-### `npm instal`
+### `npm install`
 
 ### `npm start`
 
