@@ -48,6 +48,14 @@
     "link": "https://docs.mesg.com/guide/"
   },
   {
+    "title": "Request",
+    "description": "Create, store and access invoices and receipts in a universal, decentralized network with Request Network.",
+    "category": "how-to",
+    "imageWidth": "180",
+    "icon": "../../img/partners/request.png",
+    "link": "https://request.network/en/developers/"
+  },
+  {
     "title": "Temporal",
     "description": "Temporal is an enterprise-grade storage solution featuring an easy to use API that can be integrated into any existing application stack.",
     "category": "how-to",
