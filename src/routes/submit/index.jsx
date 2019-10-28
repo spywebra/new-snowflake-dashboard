@@ -62,7 +62,7 @@ function Submit() {
               </CardBody>
               <CardFooter>
                 <Button className="partner" onClick={() =>{window.open(Partner.link)}}>
-                  View Partner
+                  View Documentation
                 </Button>
               </CardFooter>
             </Card>
