@@ -8,6 +8,14 @@
     "link": "https://docs.3box.io/"
   },
   {
+    "title": "Airswap",
+    "description": "Connect to the Airswap network and use the Swap protocol set of APIs to find and execute trades within your dApp.",
+    "category": "how-to",
+    "imageWidth": "180",
+    "icon": "../../img/partners/airswap.png",
+    "link": "https://developers.airswap.io/#/"
+  },
+  {
     "title": "BZX",
     "description": "bZx is a financial primitive for shorting, leverage, borrowing, and lending that empowers decentralized, efficient, and rent-free blockchain applications.",
     "category": "how-to",
