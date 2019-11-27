@@ -56,6 +56,14 @@
     "link": "https://docs.mesg.com/guide/"
   },
   {
+    "title": "PayTrie",
+    "description": "PayTrie is a stablecoin on/off-ramp enabling dapps to acquire Canadian customers.",
+    "category": "how-to",
+    "imageWidth": "180",
+    "icon": "../../img/partners/paytrie.png",
+    "link": "https://docs.paytrie.com/"
+  },
+  {
     "title": "Request",
     "description": "Create, store and access invoices and receipts in a universal, decentralized network with Request Network.",
     "category": "how-to",
