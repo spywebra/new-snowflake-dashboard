@@ -8,6 +8,14 @@
     "link": "https://docs.3box.io/"
   },
   {
+    "title": "Aave",
+    "description": "Aave is a decentralized non-custodial money market protocol where users can participate as depositors or borrowers.",
+    "category": "how-to",
+    "imageWidth": "160",
+    "icon": "../../img/partners/aave.png",
+    "link": "https://developers.aave.com/#what-is-aave"
+  },
+  {
     "title": "Airswap",
     "description": "Connect to the Airswap network and use the Swap protocol set of APIs to find and execute trades within your dApp.",
     "category": "how-to",
