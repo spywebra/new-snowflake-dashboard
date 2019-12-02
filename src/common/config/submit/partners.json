@@ -56,6 +56,14 @@
     "link": "https://www.hydrogenplatform.com/developers"
   },
   {
+    "title": "Infura",
+    "description": "The Infura development suite provides instant, scalable API access to the Ethereum and IPFS networks.",
+    "category": "how-to",
+    "imageWidth": "150",
+    "icon": "../../img/partners/infura.png",
+    "link": "https://infura.io/docs"
+  },
+  {
     "title": "MESG",
     "description": "MESG is a framework for developers to build applications efficiently. Use our Event and Marketplace SDKs to add powerful decentralized functionality.",
     "category": "how-to",
