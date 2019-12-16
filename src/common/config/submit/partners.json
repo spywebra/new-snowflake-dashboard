@@ -24,6 +24,14 @@
     "link": "https://developers.airswap.io/#/"
   },
   {
+    "title": "Bank of Hodlers",
+    "description": "Create secure wallets that supports the top 30 cryptocurrencies in minutes. Offer the highest rate of interest to your users to HODL within your app.",
+    "category": "how-to",
+    "imageWidth": "180",
+    "icon": "../../img/partners/bohlogo.png",
+    "link": "https://bankofhodlers.com/wallet-apis"
+  },
+  {
     "title": "BZX",
     "description": "bZx is a financial primitive for shorting, leverage, borrowing, and lending that empowers decentralized, efficient, and rent-free blockchain applications.",
     "category": "how-to",
