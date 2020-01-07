@@ -3,7 +3,7 @@ import identityRegistry from './contracts/identityRegistry';
 import clientRaindrop from './contracts/clientRaindrop';
 import oldClientRaindrop from './contracts/oldClientRaindrop';
 import snowflake from './contracts/snowflake';
-import statusAbi from '../legacy/Rinkeby/0x16fD6e2E1C4afB9C4e7B901141706596317e4ceB/abi';
+import statusAbi from '../legacy/Mainnet/0xc8697fDA750DE0d9eFb5782bBd620E7128CD09Cd/abi';
 
 
 function subscribeToDeposits(lib, address, callback) {
@@ -384,7 +384,7 @@ function getPastPurchasedDapps(lib, account) {
           event: 'purchase',
         };
 
-        if (events[i].returnValues.resolver !== '0x387Ce3020e13B0a334Bb3EB25DdCb73c133f1D7A') {
+        if (events[i].returnValues.resolver !== '0xb4a0208e0B6d367608E70175B710fE6E604838E4') {
           purchases.push(deposit);
         }
       }
@@ -446,7 +446,7 @@ function addLinkedAddress(lib, account, newAddress, signature, timestamp) {
 function getStatus(lib, account) {
   const statusContract = new lib.eth.Contract(
     statusAbi,
-    '0x16fD6e2E1C4afB9C4e7B901141706596317e4ceB',
+    '0xc8697fDA750DE0d9eFb5782bBd620E7128CD09Cd',
   );
 
   return getAccountEin(lib, account)

@@ -19,15 +19,8 @@ import SnowflakeContext from '../../contexts/snowflakeContext';
 
 import {
   Status,
-} from '../../legacy/Rinkeby/0x16fD6e2E1C4afB9C4e7B901141706596317e4ceB/index';
+} from '../../legacy/Mainnet/0xc8697fDA750DE0d9eFb5782bBd620E7128CD09Cd/index';
 
-import {
-  PetOwnerView,
-} from '../../legacy/Rinkeby/0x26098F10E1539a6b75998AfB1DA552B8fD0AE404/index';
-
-import {
-  Oxide,
-} from '../../legacy/Rinkeby/0x2930Cf9EE8E03C3E06Fa1828cCD8E371323Fde0f/index';
 
 function LegacyDapp(props) {
   const user = useContext(SnowflakeContext);
@@ -44,14 +37,7 @@ function LegacyDapp(props) {
   } = props;
 
   function displayDapp() {
-    if (id === '0x26098F10E1539a6b75998AfB1DA552B8fD0AE404') {
-      return <PetOwnerView ein={ein} />;
-    }
-
-    if (id === '0x2930Cf9EE8E03C3E06Fa1828cCD8E371323Fde0f') {
-      return <Oxide ein={ein} />;
-    }
-
+ 
     return <Status ein={ein} />;
   }
 

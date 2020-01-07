@@ -79,7 +79,7 @@ function DataLoader() {
             value: hydroBalance,
           });
 
-          const raindropContractAddress = '0x387Ce3020e13B0a334Bb3EB25DdCb73c133f1D7A';
+          const raindropContractAddress = '0xb4a0208e0B6d367608E70175B710fE6E604838E4';
 
           const identity = await getIdentity(web3.library, web3.account);
           dispatch({

@@ -38,7 +38,7 @@ function StatusWidget() {
   const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
   const [isDappModalOpen, setIsDappModalOpen] = useState(false);
 
-  const statusAddress = '0x16fD6e2E1C4afB9C4e7B901141706596317e4ceB';
+  const statusAddress = '0xc8697fDA750DE0d9eFb5782bBd620E7128CD09Cd';
   const web3 = useWeb3Context();
 
   useEffect(() => {
@@ -63,6 +63,7 @@ function StatusWidget() {
       <Purchase
         id={statusAddress}
         title="Status"
+		price="1"
         isOpen={isPurchaseModalOpen}
         toggle={() => setIsPurchaseModalOpen(false)}
       />

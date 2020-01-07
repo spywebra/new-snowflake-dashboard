@@ -1,21 +1,8 @@
 {
-	"0x16fD6e2E1C4afB9C4e7B901141706596317e4ceB": {
+	"0xc8697fDA750DE0d9eFb5782bBd620E7128CD09Cd": {
 		"title": "Status",
 		"category": "Tools",
 		"price": "1"
-	},
-	"0x26098F10E1539a6b75998AfB1DA552B8fD0AE404": {
-		"title": "PetFriend",
-		"category": "Tools",
-		"price": "1"
-	},
-	"0x2930Cf9EE8E03C3E06Fa1828cCD8E371323Fde0f": {
-		"title": "Oxide",
-		"category": "Fintech",
-		"price": "0"
-	},"0xCCB4Ea50F4e4C3f5db8457B575E5Eb498ed7F242": {
-		"title": "WhatOptionDoYouPrefer",
-		"category": "Entertainment",
-		"price": "10000000000000000000" 
 	}
+	
 }

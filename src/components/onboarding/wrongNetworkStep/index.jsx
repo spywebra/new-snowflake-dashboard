@@ -21,7 +21,7 @@ function WrongNetworkStep() {
       </Row>
       <Row className="justify-content-center">
         <Col xs="12" sm="10" className="text-center">
-          <p>Change your network to Rinkeby</p>
+          <p>Change your network to MainNet</p>
         </Col>
       </Row>
     </div>

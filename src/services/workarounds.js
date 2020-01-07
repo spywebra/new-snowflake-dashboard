@@ -6,7 +6,7 @@
 import resolvers from '../legacy/resolvers.json';
 
 function getResolverName(resolverId) {
-  if (resolvers[resolverId].title && resolverId !== '0x387Ce3020e13B0a334Bb3EB25DdCb73c133f1D7A') {
+  if (resolvers[resolverId].title && resolverId !== '0xb4a0208e0B6d367608E70175B710fE6E604838E4') {
     return resolvers[resolverId].title;
   }
 
